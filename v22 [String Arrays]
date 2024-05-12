@@ -1,0 +1,63 @@
+REVERSE STRING
+
+Q1)
+Write a function that reverses a string. The input string is given as an array of characters s
+
+  class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int st=0;
+        int e= s.size()-1;
+        while(st<e){
+            swap(s[st++],s[e--]);
+        }
+    }
+};
+
+
+
+CHECK IF A STRING IS PALINDROME
+
+      void palindrome(char name[], int n)
+      {
+       int st=0;
+        int e= s.size()-1;
+        while(st<=e){
+            if(s[st]==s[e]){
+                  st++;
+                  e--;
+            } else {
+                  return 0;
+            }
+        }
+        return 1;
+    }
+
+}
+
+          
+          
+          
+Q3)         
+You have been given a string 'STR' of words. You need to replace all the spaces between words with “@40”.
+
+          #include <bits/stdc++.h> 
+string replaceSpaces(string &str){
+string temp = " " ;
+
+	for ( int i=0; i<str.length( ); i++){
+		if ( str[i]== ' '){
+			temp.push_back('@');
+			temp.push_back('4');
+			temp.push_back('0');
+		}
+		else{
+			temp.push_back(str[i]);
+
+		}
+	}
+}
+
+
+
+      
